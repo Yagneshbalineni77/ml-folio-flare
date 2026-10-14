@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep this portfolio as a single-page TanStack Start route and define its content datasets and reusable display helpers beside that route, preserving the supplied section order and artwork; this keeps the original reference design cohesive and its user-specific copy easy to update.
