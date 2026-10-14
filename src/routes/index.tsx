@@ -6,6 +6,11 @@ import {
   type MotionValue,
 } from "framer-motion";
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import heroPortrait from "@/assets/Rectangle_40443.81459862.png.asset.json";
+import moonArtwork from "@/assets/moon_icon.11395d36.png.asset.json";
+import objectArtwork from "@/assets/p59_1.4659672e.png.asset.json";
+import legoArtwork from "@/assets/lego_icon-1.703bb594.png.asset.json";
+import groupArtwork from "@/assets/Group_134-1.2e04f3ce.png.asset.json";
 
 const github = "https://github.com/Yagneshbalineni77";
 
@@ -150,6 +155,14 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap",
+      },
     ],
   }),
   component: Portfolio,
@@ -427,7 +440,7 @@ function Portfolio() {
         <Reveal className="creator-portrait" delay={0.6} y={30}>
           <Magnet>
             <img
-              src="https://shrug-person-78902957.figma.site/_components/v2/d24c01ad3a56fc65e942a1f501eb73db42d7cf9a/Rectangle_40443.81459862.png"
+              src={heroPortrait.url}
               alt=""
               fetchPriority="high"
             />
@@ -457,25 +470,25 @@ function Portfolio() {
       >
         <img
           className="creator-decor creator-decor-moon"
-          src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/moon_icon.11395d36.png"
+          src={moonArtwork.url}
           alt=""
           loading="lazy"
         />
         <img
           className="creator-decor creator-decor-object"
-          src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/p59_1.4659672e.png"
+          src={objectArtwork.url}
           alt=""
           loading="lazy"
         />
         <img
           className="creator-decor creator-decor-lego"
-          src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/lego_icon-1.703bb594.png"
+          src={legoArtwork.url}
           alt=""
           loading="lazy"
         />
         <img
           className="creator-decor creator-decor-group"
-          src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/Group_134-1.2e04f3ce.png"
+          src={groupArtwork.url}
           alt=""
           loading="lazy"
         />
@@ -510,7 +523,12 @@ function Portfolio() {
 
           <p className="creator-education">
             <span>VIT CHENNAI</span> · B.TECH, ELECTRONICS &amp; COMPUTER
-            ENGINEERING · 2023—2027
+            ENGINEERING · 2023—2027 · CGPA 8.00/10
+          </p>
+
+          <p className="creator-education creator-publication">
+            RESEARCH PRESENTATION · REAL-TIME OBJECT DETECTION USING YOLO ·
+            ICPEDC ’25
           </p>
 
           <a className="creator-contact-button" href={`${github}#contact`}>

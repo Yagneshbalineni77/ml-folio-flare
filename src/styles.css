@@ -240,7 +240,7 @@
 .creator-hero-title {
   width: 100%;
   margin: 0;
-  font-size: 15vw;
+  font-size: clamp(2.65rem, 12vw, 11.5rem);
   font-weight: 900;
   line-height: 0.93;
   text-align: center;
@@ -498,6 +498,10 @@
   font-weight: 600;
 }
 
+.creator-publication {
+  max-width: 500px;
+}
+
 .creator-focus-section {
   position: relative;
   z-index: 1;
@@ -746,7 +750,7 @@
   }
 
   .creator-hero-title {
-    font-size: 15vw;
+    font-size: clamp(4.5rem, 12vw, 11.5rem);
   }
 
   .creator-portrait {
@@ -854,7 +858,7 @@
   }
 
   .creator-hero-title {
-    font-size: 16vw;
+    font-size: clamp(6rem, 12vw, 11.5rem);
   }
 
   .creator-portrait {
@@ -896,7 +900,7 @@
 
 @media (min-width: 1024px) {
   .creator-hero-title {
-    font-size: 17.5vw;
+    font-size: clamp(7.5rem, 12vw, 11.5rem);
   }
 
   .creator-portrait {
