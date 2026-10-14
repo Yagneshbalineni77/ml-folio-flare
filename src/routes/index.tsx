@@ -592,7 +592,7 @@ function Portfolio() {
             >
               Find me on GitHub <span aria-hidden="true">↗</span>
             </a>
-            <p className="creator-footer-credit">YAGNESh BALINENI · VIT CHENNAI</p>
+            <p className="creator-footer-credit">YAGNESH BALINENI · VIT CHENNAI</p>
           </Reveal>
         </footer>
       </section>
