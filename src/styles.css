@@ -934,6 +934,12 @@
   }
 }
 
+@media (max-width: 639px) {
+  .creator-hero-title {
+    font-size: clamp(1.75rem, 9.2vw, 3.5rem);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
