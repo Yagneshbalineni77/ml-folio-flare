@@ -53,6 +53,14 @@ export const showcaseRows = [
   ],
 ];
 
+/** Floating 3D objects in the corners of the About section (transparent WebP). */
+export const aboutDecor = [
+  { name: "moon", src: art("decor-orb") },
+  { name: "object", src: art("decor-cubes") },
+  { name: "lego", src: art("decor-chip") },
+  { name: "group", src: art("decor-ring") },
+];
+
 /** Per project: two stacked images, then the tall feature image. */
 export const projectArtwork = [
   [art("video-gpu"), art("video-audio"), art("video-feature")],

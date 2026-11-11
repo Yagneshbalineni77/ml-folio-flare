@@ -1,27 +1,40 @@
-# Ml Folio Flare
+# Yagnesh Balineni — Portfolio
 
-this is the webiste i want you to build i mean like see wiht out chnaging anyaassets or like astyles just chage the content with my info this is my resume in this highlight ml part 
-and also like u know this is my github if yu neeed 
-https://github.com/Yagneshbalineni77
-again ia m saying dont chnage any styles assets the roginal one should be like that
+Personal portfolio of **Yagnesh Balineni**, Machine Learning & AI Engineer (B.Tech, Electronics & Computer Engineering, VIT Chennai).
 
-This project was built with [Lovable](https://lovable.dev).
+It covers my work in computer vision, medical imaging, generative AI and energy-efficient spiking neural networks: experience, publications, skills and selected projects.
 
-## Build with Lovable
+- **Résumé:** [`public/Yagnesh_Balineni_Resume.pdf`](public/Yagnesh_Balineni_Resume.pdf)
+- **GitHub:** [@Yagneshbalineni77](https://github.com/Yagneshbalineni77)
+- **LinkedIn:** [yagnesh-balineni](https://www.linkedin.com/in/yagnesh-balineni-890167287)
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/e04f8e03-7a25-4e8c-a5f3-cb852ad090d9).
+## Highlights
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+- A floating 3D avatar that tilts toward the pointer.
+- Layered scrolling: each section slides over the one before it, and the projects stack as sticky cards.
+- Smooth scrolling with [Lenis](https://github.com/darkroomengineering/lenis). Scroll-linked effects run on compositor layers.
+- Original artwork for every project, served as lightweight WebP files from `public/art/`.
 
-## Development
+## Tech stack
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+React 19 · TanStack Start (file-based routing, SSR) · Vite · Tailwind CSS v4 · Framer Motion · Lenis · TypeScript
+
+## Project structure
+
+```
+src/routes/index.tsx            Page sections and display components
+src/routes/-portfolio-data.ts   All content (profile, experience, projects, skills); edit this to update the site
+src/styles.css                  Theme tokens and portfolio styles
+public/art/                     Project and section artwork
+```
+
+## Run locally
+
+Requires Node.js 20+.
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+npm install
+npm run dev       # start the dev server
+npm run build     # production build
+npm test          # run tests
 ```

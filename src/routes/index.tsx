@@ -19,12 +19,9 @@ import {
   type ReactNode,
   type RefObject,
 } from "react";
-import moonArtwork from "@/assets/moon_icon.11395d36.png.asset.json";
-import objectArtwork from "@/assets/p59_1.4659672e.png.asset.json";
-import legoArtwork from "@/assets/lego_icon-1.703bb594.png.asset.json";
-import groupArtwork from "@/assets/Group_134-1.2e04f3ce.png.asset.json";
 import Lenis from "lenis";
 import {
+  aboutDecor,
   education,
   experience,
   focusAreas,
@@ -50,7 +47,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: pageTitle },
       { property: "og:description", content: pageDescription },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: profile.avatar },
+      { property: "og:image", content: "/og-image.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#0e0e10" },
     ],
@@ -557,16 +554,11 @@ function SectionLabel({ index, children }: { index: string; children: ReactNode 
 function AboutSection() {
   return (
     <div className="creator-about">
-      {[
-        { art: moonArtwork, name: "moon" },
-        { art: objectArtwork, name: "object" },
-        { art: legoArtwork, name: "lego" },
-        { art: groupArtwork, name: "group" },
-      ].map(({ art, name }) => (
+      {aboutDecor.map(({ src, name }) => (
         <img
           key={name}
           className={`creator-decor creator-decor-${name}`}
-          src={art.url}
+          src={src}
           alt=""
           loading="lazy"
           onError={(event) => {
