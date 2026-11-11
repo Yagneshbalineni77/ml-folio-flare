@@ -33,3 +33,6 @@ dist-ssr
 
 # Local secrets — never commit
 src/key
+
+# Vercel build output
+.vercel
